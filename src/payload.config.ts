@@ -18,6 +18,13 @@ export default buildConfig({
     importMap: {
       baseDir: path.resolve(dirname),
     },
+    components: {
+      views: {
+        Dashboard: {
+          Component: 'src/dashboard',
+        },
+      },
+    },
   },
   collections: [Users, Media],
   editor: lexicalEditor(),
